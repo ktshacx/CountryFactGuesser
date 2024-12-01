@@ -1,0 +1,139 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Title Styling */
+.game-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container */
+.game-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styling */
+.game-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Title */
+.game-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Fact Text */
+#fact {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#guess {
+    padding: 10px;
+    flex: 1;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Button Colors */
+#submit-button {
+    background-color: #2ed573;
+}
+
+#submit-button:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+#hint-button {
+    background-color: #ffa502;
+}
+
+#hint-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+#next-button {
+    background-color: #1e90ff;
+}
+
+#next-button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Score and Feedback */
+#score, #result {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

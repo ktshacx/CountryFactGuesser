@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Fact Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1 class="game-title">🌍 Country Fact Guesser</h1>
+        <div class="game-cards">
+            <!-- Fact Card -->
+            <div class="game-card">
+                <h2>Fact</h2>
+                <p id="fact">Loading a fun fact...</p>
+                <p id="hint">Hint</p>
+            </div>
+            <!-- Input Card -->
+            <div class="game-card">
+                <h2>Make a Guess</h2>
+                <div class="input-container">
+                    <input type="text" id="guess" placeholder="Guess the country">
+                    <button id="submit-button">Submit</button>
+                </div>
+                <button id="hint-button">💡 Get a Hint</button>
+            </div>
+            <!-- Score Card -->
+            <div class="game-card">
+                <h2>Score</h2>
+                <p id="score">Score: 0</p>
+                <p id="result"></p>
+                <button id="next-button" style="display: none;">Next ➡️</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
